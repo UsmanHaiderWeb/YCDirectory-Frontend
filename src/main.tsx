@@ -26,7 +26,6 @@ if (!PUBLISHABLE_KEY) {
   throw new Error('Add your Clerk publishable key to the .env.local file')
 }
 
-ash
 const client = new ApolloClient({
     uri: 'https://ycdirectory-backend.vercel.app/graphql',
     cache: new InMemoryCache()

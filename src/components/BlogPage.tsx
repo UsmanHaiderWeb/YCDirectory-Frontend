@@ -55,7 +55,7 @@ const BlogPage = () => {
             <div>
                 <h4 className='bg-[#FBE843] py-2 px-5 text-[14px] micro:text-[12px]'>Founder Usman Haider</h4>
             </div>
-            <h1 className='uppercase text-[45px] leading-[50px] tablet:text-[40px] tablet:leading-[45px] mini:text-[32px] mini:leading-[38px] mobile:text-[28px] mobile:leading-[35px]  micro::text-[40px] micro::leading-[45px] font-bold max-w-[720px] px-5 text-center'>{data.getSingleBlog.title && 'Job Portal | Get Hired'}</h1>
+            <h1 className='uppercase text-[45px] leading-[50px] tablet:text-[40px] tablet:leading-[45px] mini:text-[32px] mini:leading-[38px] mobile:text-[28px] mobile:leading-[35px]  micro::text-[40px] micro::leading-[45px] font-bold max-w-[720px] px-5 text-center'>{data.getSingleBlog.title || 'Job Portal | Get Hired'}</h1>
             <p className='text-[13px] micro:text-[12px] text-center w-3/5 tablet:w-[400px] mini:w-[80%] mobile:w-[85%] micro:w-[90%]'>Please submit your ideas. Vote on Blogs, And Get noticed in virtual competitions. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Submit your ideas. Vote on Blogs, And Get noticed in virtual competitions</p>
             <div className='mini:flex mobile:flex micro:flex tablet:flex justify-center items-center gap-x-3 hidden'>
                 <SaveBlog />

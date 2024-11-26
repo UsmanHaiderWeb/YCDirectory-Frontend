@@ -52,7 +52,7 @@ const BlogPage = () => {
   return (
     <div className='flex justify-center items-center flex-col'>
         <div className='w-full flex justify-center items-center flex-col py-4 gap-y-3'>
-            <div>
+            <div className='w-full flex justify-center'>
                 <h4 className='bg-[#FBE843] py-2 px-5 text-[14px] micro:text-[12px]'>Founder Usman Haider</h4>
             </div>
             <h1 className='uppercase text-[45px] leading-[50px] tablet:text-[40px] tablet:leading-[45px] mini:text-[32px] mini:leading-[38px] mobile:text-[28px] mobile:leading-[35px]  micro::text-[40px] micro::leading-[45px] font-bold max-w-[720px] px-5 text-center'>{data.getSingleBlog.title || 'Job Portal | Get Hired'}</h1>

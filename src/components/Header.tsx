@@ -1,5 +1,5 @@
 import { SignedIn, SignedOut, SignOutButton, UserButton, useUser } from '@clerk/clerk-react'
-import { Blocks, Building, Heart, Newspaper } from 'lucide-react'
+import { Blocks, Building, Building2, Heart, Newspaper } from 'lucide-react'
 import React, { memo } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
@@ -42,6 +42,7 @@ const Header = () => {
                 <UserButton.Action onClick={() => navigate('/')} label='Blogs' labelIcon={<Newspaper size={15} />} />
                 <UserButton.Action onClick={() => navigate('/creators')} label='Creators' labelIcon={<Building size={15} />} />
                 <UserButton.Action onClick={() => navigate('/most-liked-blogs')} label='Most Liked' labelIcon={<Heart size={15} />} />
+                <UserButton.Action onClick={() => navigate('/create')} label='Create Blog' labelIcon={<Building2 size={15} />} />
               </UserButton.MenuItems>
             </UserButton>
           </SignedIn>
